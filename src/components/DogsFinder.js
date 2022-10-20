@@ -40,9 +40,9 @@ const dogs = [
 function DogsFinder() {
     return ( 
         <BrowserRouter>
+          <Dogs dogs={dogs}/>
             <Routes>
-              
-                <Route path='/' element={<Dogs dogs={dogs}/>}/>
+
                 <Route path='/dogs/:name' element={<SingleDog dogs={dogs}/>}/>
             </Routes>
         </BrowserRouter>
